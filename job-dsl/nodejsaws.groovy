@@ -1,4 +1,4 @@
-job('NodeJS Docker example') {
+job('NodeJS on AWS ECR') {
     scm {
         git('git://github.com/hambalihan/docker-demo.git') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('hambalihan')
