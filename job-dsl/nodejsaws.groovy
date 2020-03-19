@@ -14,7 +14,7 @@ job('NodeJS on AWS ECR') {
     }
     steps {
         dockerBuildAndPublish {
-            repositoryName('216481605168.dkr.ecr.ap-southeast-1.amazonaws.com/docker-nodejs-demo')
+            repositoryName('docker-nodejs-demo')
             tag('${GIT_REVISION,length=9}')
             registryCredentials('AWSECR')
             forcePull(false)
